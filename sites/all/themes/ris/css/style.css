@@ -37,13 +37,12 @@ body, a, a:visited {
   clear: both;
 }
 
-.front .node-1 {
-  width: 60%;
-  padding: 0 20px;
-  border-right: 2px solid #555;
-    border-left: 2px solid #555;
-    font-size: 1.2em;
 
+.front .node-1 {
+  width: 78%;
+  padding: 0 20px;
+  border-left: 2px solid #555;
+  font-size: 1em;
 }
 
 #block-block-3 {
@@ -52,6 +51,10 @@ body, a, a:visited {
 	padding: 20px 0;
 	text-align: center;
 	background: #222;
+}
+
+#block-block-3 a {
+  color: orange;
 }
 
 #block-block-4 {
@@ -79,22 +82,55 @@ body, a, a:visited {
 	background-position: 93% 24px, 93% 145px, 93% 280px;
 }
 
-.main-menu ul {
+ul.nice-menu {
 	margin: 20px 0;
     
     
 }
 
-.main-menu ul li {
+ul.nice-menu li {
 	padding: 6px 24px;
+	border: none;
 	border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    background: none;
+    list-style: none;
+}
 
+ul.nice-menu li.menu-219 {
+  margin-left: 250px;
+}
+
+ul.nice-menu li.menu-497 {
+  margin-right: 250px;
+}
+
+
+ul.nice-menu li li {
+  border: none;
+  background: #222;
+}
+
+ul.nice-menu li a {
+	text-decoration: none;
+	color: #fff;
+	background: none;
+}
+
+ul.nice-menu ul {
+  top: 38px;
+  background: #222;
+}
+
+ul.nice-menu-down li.menuparent
+ {
+	background: none;
 }
 
 
 
-.main-menu ul li:hover,
+ul.nice-menu li:hover,
+ul.nice-menu-down li.menuparent:hover,
 .form-submit:hover {
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffcd2f), to(#ff9c05));
   border-color: orange;
